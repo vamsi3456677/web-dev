@@ -1,0 +1,13 @@
+@media screen and (max-width:800px){
+        .visible{
+            display: none;
+        }
+        .menunav{
+            left: 0vw;
+            width: 100vw;
+            position: absolute;
+            margin: auto;
+            top: calc(50vh - 50vw);
+            animation: rotate 60s infinite linear;
+        }
+}

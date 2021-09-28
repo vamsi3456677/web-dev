@@ -1,0 +1,200 @@
+html { font: 100%/1.3 'Quicksand',Century Gothic, Verdana, sans-serif;background: #23074d;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+body { overflow: hidden; min-width: 20em;background-image: url(../../images/plpg.jpg)    ; }
+.circle, .circle:before, .circle:after { border-radius: 50%; }
+.menunav {
+  position: absolute;
+  display: block;
+  left: 20%;
+  margin: 75px auto;
+  min-width: 10em; width: 50%; max-width: 30em;
+}
+.menunav ul {
+  position: relative;
+  padding: 50%;
+  max-width: 0; max-height: 0;
+  list-style: none;
+}
+.menunav li {
+  position: absolute;
+}
+.slice {
+  overflow: hidden;
+  position: absolute;
+  top: 0; left: 0;
+  width: 50%; height: 50%;
+  transform-origin: 100% 100%;
+}
+/* Cell orientation */
+.coconut { transform: rotate(13deg) skewX(40deg); }
+.vanilla { transform: rotate(64.43deg) skewX(40deg); }
+.orange { transform: rotate(115.86deg) skewX(40deg); }
+.almond { transform: rotate(167.29deg) skewX(40deg); }
+.grape { transform: rotate(218.71deg) skewX(40deg); }
+.blackberry { transform: rotate(270.14deg) skewX(40deg); }
+.cherry { transform: rotate(321.57deg) skewX(40deg); }
+.menunav label { cursor: pointer; }
+.slice label {
+  display: block;
+  width: 200%; height: 200%;
+  transform: skew(-40deg) rotate(-65deg);
+  line-height: 1.9;
+  text-align: center;
+}
+.slice label span {
+	display: block;
+}
+.slice label:hover {
+	color: white;
+	border: 2px solid silver;
+	transition: all 0.5s ease;
+}
+.circle .menuname:hover {
+	color: white;
+	transition: color 0.5s ease;
+}
+
+.menudesc {
+	width: 280px;
+}
+
+/* Cell background colors */
+.coconut label, .ococonut:checked ~ nav .unsel { background: #00467F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+.vanilla label, .ovanilla:checked ~ nav .unsel {background: #16A085;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+.orange label, .oorange:checked ~ nav .unsel { background: #e53935;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+.almond label, .oalmond:checked ~ nav .unsel { background: #2C3E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+.grape label, .ogrape:checked ~ nav .unsel {background: #093028;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+.blackberry label, .oblackberry:checked ~ nav .unsel { background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+.cherry label, .ocherry:checked ~ nav .unsel { background: #8E0E00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+
+
+.slice label { font-weight: 700; line-height: 5; }
+.circle label { font-weight: 700; line-height: 5; }
+
+.slice p{
+  width: 100px;
+  margin-left: 185px;
+}
+
+.unsel {
+  z-index: 2;
+  top: 34%; left: 34%;
+  width: 32%; height: 32%;
+  text-align: center;
+  background-color: wheat;
+ 
+}
+.unsel label{
+  display: block;
+  width: 100%; height: 100%;
+  line-height: 9;
+  border-radius: 50%;
+
+}
+.middle{
+  z-index: 1;
+  top: 15%; left: 15%;
+  width: 70%; height: 70%;
+  text-align: center;
+  background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #c31432,#240b36 );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ;
+}
+.menunav{
+  position: absolute;
+  left: 50%;
+}
+.visible{
+    display: block;
+    position: absolute;
+    margin: 250px 0 0 50px;
+}
+.hidden{
+  display: none;
+}
+.visible ul{
+  list-style-type: none;
+}
+.visible details ul{
+  list-style-type: square;
+}
+.visible a{
+  font-size: 120%;
+  text-decoration: none;
+  color: purple;
+}
+.Reseau a{
+  font-size: 160%;
+}
+.Reseau a:hover{
+  color: red;
+}
+.circle label span{
+  -webkit-transform:rotate(-180deg);
+  -moz-transform:rotate(-180deg);
+  -o-transform:rotate(-180deg);
+  transform:rotate(-180deg);
+}
+.sai{
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+.sai:hover {
+  animation-play-state: paused;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("photographer.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*{
+  
+ 
+  color:white;
+}

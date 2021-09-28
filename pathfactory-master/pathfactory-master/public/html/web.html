@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development</title>
+    <link rel="stylesheet" href="../cssfiles/index.css">
+    <link rel="stylesheet" href="../cssfiles/blog.css">
+    <link rel="stylesheet" href="../cssfiles/nav.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Girassol&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body  id="body">
+  <script>
+    // toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+  </script>
+  <div id="navi">
+    <nav style="padding: 10px 10px ; ">
+
+      <a class="navbar-brand" href="../radial-pie-circle-menu/menuRond.html">HOME</a>
+
+      <div class="dropdown" style="float: right;">
+        <button onclick="myFunction()" class="dropbtn">Categories<i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../html/ml.html">machine learning</a>
+          <a href="../html/web.html">Web development</a>
+          <a href="../html/app.html">App development</a>
+          <a href="../html/IOT.html">IOT</a>
+          <a href="../html/python.html">Python</a>
+          <a href="../html/java.html">Java</a>
+        </div>
+      </div>
+
+
+
+    </nav>
+  </div>
+  
+  <br/>
+    <br/>
+  
+    <section class="container" id="cont">
+      <h1 style="font-family: 'Pacifico', cursive;">Web development</h1><br>
+      <img src="../images/3.jpg" class="saiimage">
+        <h2>what is Web development ?</h2>
+        <p>
+            Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web-based internet applications (web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web engineering, web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development. 
+        </p>
+        <br>
+        <h2>What are the languages involved ?</h2>
+        <p>
+          HTML(Hypertext markup language),CSS(Cascading style sheet),Javascript are the basics that every Web developer must know.Web development is divided into two parts 1.Frontend 2.Backend development.
+          Front-End Development takes care of the user interface(UI) and front-end developers build websites using the different web technologies such as HTML, CSS, JavaScript, Bootstrap, AngularJS, ReactJS.
+
+Backend Development takes care of interaction with server and backend developers uses PHP, NodeJS, Ruby programming, Python etc,.
+
+Database Management takes care of interaction with database and developer use MySQL, MongoDB, etc,.
+        </p>
+        <br>
+        <h2>
+          Learning path
+        </h2>
+       <p style="color: black;  font-family: 'Baloo Bhai 2', cursive;font-size: 20px; overflow: hidden;">
+Here is the <p1>Roadmap</p1> of web development:<br><br>
+
+<a href="https://roadmap.sh/roadmaps" target="_blank" ><button id="but">click here</button></a><br><br>
+
+<h2>Resources</h2><br>
+
+<h4>1.W3schools</h4><br>
+It's a free website for learning web devolopment.you can everything for free<br>
+<a href="https://W3schools.com" target="_blank" ><button id="but">click here</button></a><br><br>
+<h4>2.Youtube</h4><br>
+HTML crash course by Freecodecamp :
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+CSS crash course:<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yfoY53QXEnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+Javascript crashcourse:<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+<h4>udemy</h4><br>
+Here you can get certification courses:<br><br>
+<a href="https://www.udemy.com/courses/development/web-development/" target="_blank" ><button id="but">click here</button></a><br><br>
+<h4>MDN</h4><br>
+MDN Web Docs(previously known as MDN — the Mozilla Developer Network) is an evolving learning platform 
+for Web technologies and the software that powers the Web, including:<br>
+  <ul><li>Web standards such as CSS, HTML, and JavaScript</li><li>Open Web app development</li><li>Firefox add-on development</li>
+ </ul><br><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" ><button id="but">click here</button></a><br>
+
+<br>
+<h4>Traversy media</h4><br>
+It is a youtube channel where you can get trending and advanced web devolopment courses for free!<br><br>
+<a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank" ><button id="but">click here</button></a><br>
+
+<br><br>
+</pre>
+
+
+
+    </section>
+    <!--footer-->
+<footer class="footer-distributed" id="foot">
+
+ 
+  <div class="footer-left" >
+      <img src="../logo.png"  id="footimg">
+      
+
+      <p class="footer-company-name">© 2020 The Path Factory.</p>
+  </div>
+
+  <div class="footer-center">
+      <div>
+          <a href="https://www.google.com/maps/dir//advanced+academic+center+griet/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bcb8d42d6f1f7ff:0xf9e2e5aa8a14a917?sa=X&ved=2ahUKEwjfw8_6xLbjAhUZiHAKHV7AAC0Q9RcwC3oECA0QDA"><i class="fa fa-map-marker"></i></a>
+            <p> <span>Room no.3614, Block 3, GRIET, Bachupally, </span>
+              Kukatpally, Hyderabad- 500090</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 8688898707</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:pathfactory.org@gmail.com" style="color: #fff;">pathfactory.org@gmail.com</a></p>
+      </div>
+  </div>
+  <br>
+  <p>Designed and Developed by Team AAC 20AAC52</p>
+  <a href="https://github.com/saichand84/pathfactory" target="_blank"><i class="fa fa-github"></i> Github repository</a>
+  <br><br>
+  <div class="footer-right">
+      <p class="footer-company-about" style="color: #fff">
+          <span>About the AAC</span>
+          The epicenter for creative solutions.</p>
+
+          <p class="footer-links">
+          <a href="http://aacgriet.com" target="_blank">Home</a>
+          |
+          <a href="http://aacgriet.com/aac_about.html" target="_blank">About</a>
+          |
+          <a href="http://aacgriet.com/faq.html" target="_blank">FAQ</a>
+      </p>
+      <div class="footer-icons">
+          <a href="https://www.linkedin.com/company/aac-griet" target="_blank"><i class="fa fa-linkedin"></i></a>
+          
+          <a href="https://instagram.com/aac_grietofficial?igshid=ijzbi8c7jl27" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCqpWtDtDLxBLy8yJZO_-eBw" target="_blank"><i class="fa fa-youtube"></i></a>
+      </div>
+      <br>
+      
+  </div>
+</footer>
+</body>
+</html>

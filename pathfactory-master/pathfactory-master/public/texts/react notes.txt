@@ -1,0 +1,1 @@
+jsx looks like html but there are minor differances like instead of class we use className in jsx

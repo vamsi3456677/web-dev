@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>PathFactory-Home</title>
+		<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+		<script src="../loginregister/js/form.js"></script>
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<link href="../cssfiles/nav.css" type="text/css" rel="stylesheet">
+		<link href="resp.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Girassol&family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	</header>
+	<body>
+		<script>
+			// toggle between hiding and showing the dropdown content */
+		 function myFunction() {
+		   document.getElementById("myDropdown").classList.toggle("show");
+		 }
+   
+		 // Close the dropdown menu if the user clicks outside of it
+		 window.onclick = function(event) {
+		   if (!event.target.matches('.dropbtn')) {
+			 var dropdowns = document.getElementsByClassName("dropdown-content");
+			 var i;
+			 for (i = 0; i < dropdowns.length; i++) {
+			   var openDropdown = dropdowns[i];
+			   if (openDropdown.classList.contains('show')) {
+				 openDropdown.classList.remove('show');
+			   }
+			 }
+		   }
+		 }
+   
+	 </script>
+		<div id="navi" >
+			<nav style="padding: 10px 10px ; " >
+		  
+				<a class="navbar-brand" href="#">HOME</a>
+				
+				<div class="dropdown" style="float: right;" >
+				  <button onclick="myFunction()" class="dropbtn">Categories<i class="fa fa-caret-down"></i></button>
+				  <div id="myDropdown" class="dropdown-content">
+					<a href="../html/ml.html">machine learning</a>
+					<a href="../html/web.html">Web development</a>
+					<a href="../html/app.html">App development</a>
+					<a href="#">IOT</a>
+					<a href="#">Python</a>
+					<a href="#">Java</a>
+					<a href="../html/higher.html">Job and internship</a>
+				  </div>
+				  <button id="sign-out" style="color: rgb(235, 98, 6); background-color: rgba(0, 0,0,0.0);"  onclick="signOut();" >sign out</button>
+				</div>
+				
+				
+				
+			</nav>
+		  </div>
+<div class="bg-image"></div>
+
+		<div class="menumain">
+			<div class ='hidden' id="menu1"> <!-- Menu content, hidden by default -->
+				<h1>Macine Learning</h1>
+
+			</div>
+			<div class ='hidden' id="menu2">
+				<h1>Web development</h1>
+
+			</div>
+			<div class ='hidden' id="menu3">
+				<h1>App development</h1>
+
+			</div>
+			<div class ='hidden' id="menu4">
+				<h1>Internet of Things</h1>
+
+			</div>
+			<div class ='hidden' id="menu5">
+				<h1>Python</h1>
+
+			</div>
+			<div class ='hidden' id="menu6">
+				<h1>Java</h1>
+
+			</div>
+			<div class ='hidden' id="menu7">
+				<h1>Job and internships</h1>
+
+			</div>
+			<div class ='visible' id="menu8">
+				<h1>The<br/>PathFactory</h1>
+				<p class="menudesc">A tech guidance platform.</p>
+			</div>
+			<nav class="menunav" >
+				<div class="sai">
+					<ul class='circle' >
+						<li class='coconut light slice' > <!-- Menu labels -->
+							<a href="../html/ml.html"><label for='ococonut' class='circle over' id="1" >Ml</label></a>
+						</li>
+						<li class='vanilla light slice'>
+							<a href="../html/web.html"><label for='ovanilla' class='circle over' id="2">Web</label></a>
+						</li>
+						<li class='orange light slice'>
+							<a href="../html/app.html"><label for='oorange' class='circle over' id="3">App</label></a>
+						</li>
+						<li class='almond light slice'>
+							<a href="">
+								<label for='oalmond' class='circle over' id="4">IOT </label></a> <!-- Some menu labels have to be flipped with a span -->
+						</li>
+						<li class='grape light slice'>
+							<a href=""><label for='ogrape' class='circle over' id="5" >Python</label></a>
+						</li>
+						<li class='blackberry dark slice'>
+						    <a href="">	<label for='oblackberry' class='circle over' id="6" >Java</label></a>
+						</li>
+						<li class='cherry dark slice'>
+							<a href="../html/higher.html"><label for='ocherry' class='circle over' id ="7" >J & I</label></a>
+						</li>
+						<li class='unsel circle'>
+							<label for='unsel' class="clicky menuname" style="background: #c31432; 
+							background: -webkit-linear-gradient(to right, #240b36, #c31432); 
+							background: linear-gradient(to right, #240b36, #c31432); " >Path factory</label>
+						</li>
+						<li class='middle circle'></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+			
+			<!--fire-->
+			<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>			
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script>
+    // Visit https://console.firebase.google.com/project/<your project id>/overview and click on "Add Firebase to your web app"
+    var config = {
+		apiKey: "AIzaSyD9ExOIpRu4UiVZ8d2faaE9H8PvEHwhYOU",
+		authDomain: "form-28fc2.firebaseapp.com",
+		databaseURL: "https://form-28fc2.firebaseio.com",
+		projectId: "form-28fc2",
+		storageBucket: "form-28fc2.appspot.com",
+		messagingSenderId: "459016781118",
+		appId: "1:459016781118:web:a1d912df0b74a161bd406f"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script>
+	        document.querySelector('#sign-out').addEventListener('click', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			firebase.auth().signOut();
+    });
+  </script>
+
+
+
+		</body>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

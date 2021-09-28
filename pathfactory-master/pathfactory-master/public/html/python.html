@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="../cssfiles/blog.css">
+    <link rel="stylesheet" href="../cssfiles/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../cssfiles/index.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=670soKABBiRQlPT8wiA36NTOq2Q2R1_a2d_Jjoxum2hW_kxlv4ij7i5NNsovfP63SBSFDaJKpcrYKzIfY-k8oxLf74nLO418UDy1hfeC1X1tL3B_mQVICezNhBlZaC_ZqKqtBQWwcbQNH5TY9QOcLHupuOcr2jat_Os2MzDRty7wZBy7xsWXfZ0_RoaOB4fLSMTdbucJ2xQQYmBsvzfES1EQtu5cRwJBpoAziDbkH2bcsFbXnRCXVaVkb3ikguWzgWO3egVXde0KmXjzHBmVbBAO5GNotxvqPYITHMN1Yqtqm7eqJSzigY5210e6MGVGBLUaj31Zzn76IKcZQH6gW390nzQoBNaUR9uzBv2sMQ5uKrN-8I8CC_dttrOUq0u9r4mV-oFHZUqCPmjpMhEBcY_nnBQnNWbeLSQFpHzZgYrHfyhg9TP4EgukyMvirbOX6RuZSwUgmyXxzzCH9juUSxhEjNjFw2kLT_gZ7RGjZAuMW1ApOIz5i3M1EtxHEHQ8hBH1-iGzVhwGpWctR7ZqlFxLER9k-1EwJsWPNacH3q0iD7YCvGB7cHwg1B0RVKHAn6Y0s4K35LqWcG-AYebB2-b3ZwIWgWRH-9ynq2hXvfZ9-1e1KYNOJuamHK8pCdZUd3r5xRijOxO6VfVgYeAJ8HgNUlM5J8lb7DBbUOVPTJwovFR_1eU6qHn2dThi6ImzSZlfU7ZLgBP1WLLO9-OCTOt2Nk9RDH2EDfdt_1Nv4wPR1clDBghgzWxBOojEJWaMYnR3QcZb8EICGO_TNruLa6XjQ7pZc0QlhCny5nWaIIZ6LNQSiejcPSPSa7Ev7LhSxoDsi7fGsTmlEPZl-IoVm3YlPNGYQxtgqBRIFt7o7Js3vTnsN7AS6ut1Ah8iu1dgYMmJdKS8WgP5Gdo0GT9HDgD9Loq7gcHUAcbon3svOsXvYlR4N9QfSViAb6ZbMMctJiUWSnpAtIoaEynzb2PIIs7LTOJsK7NvFkVEVKmAvW2z4BN7UBMKyjUSx22zpGsJgdck_v2EkQfWJuHMH579Ys8e-ARjOtphT_Y7-jEsUslieSteWqeB1IuVmdHf9h8lp6Y0lBGY4XldDCLylTeV7C8I35gi2DAOJu0YAN1cygzLSLEulPQHyYhUzIIl9fw_Qh_85xLNOOV7VI3OslxOeBPzZ79cPMzZF8d5to5l1u1Dn1L44hQ9dLJh6kStqMEJJKYEF2sEHahb0koxLW8wVA" nonce="9009424b87436574cfae0e908dec1d58" charset="UTF-8"></script></head>
+<body  id="body">
+  <script>
+    // toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+ 
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+  </script>
+  <div id="navi">
+    <nav style="padding: 10px 10px ; ">
+
+      <a class="navbar-brand" href="../radial-pie-circle-menu/menuRond.html">HOME</a>
+
+      <div class="dropdown" style="float: right;">
+        <button onclick="myFunction()" class="dropbtn">Categories<i class="fa fa-caret-down"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../html/ml.html">machine learning</a>
+          <a href="../html/web.html">Web development</a>
+          <a href="../html/app.html">App development</a>
+          <a href="../html/IOT.html">IOT</a>
+          <a href="../html/python.html">Python</a>
+          <a href="../html/java.html">Java</a>
+        </div>
+      </div>
+
+
+
+    </nav>
+  </div>
+  
+  <br/>
+    <br/>
+  
+     
+    <section class="container" id="cont">
+      <h1 style="font-family: 'Pacifico', cursive;">Python</h1><br>
+      <img src="../images/python.jpg" class="saiimage">
+    <h2>what is python ?</h2>
+    <p>
+      Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+    </p>
+    <p>Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.</p>
+    <br>
+    <h2>Why Learn Python?</h2>
+    <p>
+      Python is a general-purpose, versatile and popular programming language. It’s great as a first language because it is concise and easy to read, and it is also a good language to have in any programmer’s stack as it can be used for everything from web development to software development and data science applications.</p>
+      <h2>Take-Away Skills</h2>
+      <p>
+        This course is a great introduction to both fundamental programming concepts and the Python programming language. Python 3 is the most up-to-date version of the language with many improvements made to increase the efficiency and simplicity of the code that you write.</p>
+    <h2>Learn the Basics</h2>
+    <p>
+     * Hello, World!
+     * Variables and Types
+     * Lists
+     * Basic Operators
+     * String Formatting
+     * Basic String Operations
+     * Conditions
+     * Loops
+     * Functions
+     * Classes and Objects
+     * Dictionaries
+     * Modules and Packages
+    </p>
+    <br>
+    <h2>
+      What you will learn
+    </h2>
+    <p>
+     * Syntax
+     * Python objects
+     * Scalar types
+     * Operators
+     * String I/O
+     * Functions
+     * Python modules
+     * Collections
+     * Python best practices
+     * Pre-requisites<br>
+    <pre id="pre">
+      
+
+
+<h4>1.geeks for geeks</h4>
+here is the basic stuff about <p1>how to start python</p1>
+
+<a href="https://www.geeksforgeeks.org/python-programming-language//" target="_blank" ><button id="but">click here</button></a>
+
+ 
+<p1>Learn basic Python:</p1>
+
+There are lot of resources available in internet.
+<h4>2.Telusko(youtube)</h4>
+You can learn python for free.Here is the link 
+
+<a href="https://www.youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" target="_blank" ><button id="but">click here</button></a>
+
+<h4>3.Books</h4>
+If you wanna read some stuff about python.Here are the links:
+<a href="https://docs.python.org/3.8/tutorial/index.html" target="_blank">Python official documentation</a>
+<a href="https://diveintopython3.net/table-of-contents.html" target="_blank">How to dive into python</a>
+<a href="https://python.swaroopch.com/oop.html" target="_blank">Python by Swaroop CH</a>
+
+Learn some cool Python packages:
+Some of the popular packages (basic) used in Python are as follows:
+* Numpy.
+* Pandas.
+* Matplotlib.
+* Scikit.
+
+<h4>codecademy</h4>
+learn Python using this course.
+
+<a href="https://www.codecademy.com/learn/learn-python-3" target="_blank" ><button id="but">click here</button></a>
+
+<h4>udemy course</h4>
+learn Python paid certification course. 
+
+<a href="https://www.udemy.com/course/learn-python-programming-a-step-by-step-course-to-beginners/" target="_blank" ><button id="but">click here</button></a>
+
+<h4>Additional resources</h4>
+freecodecamp python full crash course: 
+<iframe  id="video"  width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h4>additional links:</h4>
+<a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">Tutorials point</a>
+<a href="https://www.w3schools.com/python/default.asp" target="_blank">W3SCHOOLS</a>
+<a href="" target="_blank"></a>
+
+
+
+    </pre> </p>
+
+
+        
+    </section>
+    <!--footer-->
+<footer class="footer-distributed" id="foot">
+
+ 
+  <div class="footer-left" >
+      <img src="../logo.png"  id="footimg">
+      
+
+      <p class="footer-company-name">© 2020 The Path Factory.</p>
+  </div>
+
+  <div class="footer-center">
+      <div>
+          <a href="https://www.google.com/maps/dir//advanced+academic+center+griet/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bcb8d42d6f1f7ff:0xf9e2e5aa8a14a917?sa=X&ved=2ahUKEwjfw8_6xLbjAhUZiHAKHV7AAC0Q9RcwC3oECA0QDA"><i class="fa fa-map-marker"></i></a>
+            <p> <span>Room no.3614, Block 3, GRIET, Bachupally, </span>
+              Kukatpally, Hyderabad- 500090</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 8688898707</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:pathfactory.org@gmail.com" style="color: #fff;">pathfactory.org@gmail.com</a></p>
+      </div>
+  </div>
+  <br>
+  <p>Designed and Developed by Team AAC 20AAC52</p>
+  <a href="https://github.com/saichand84/pathfactory" target="_blank"><i class="fa fa-github"></i> Github repository</a>
+  <br><br>
+  <div class="footer-right">
+      <p class="footer-company-about" style="color: #fff">
+          <span>About the AAC</span>
+          The epicenter for creative solutions.</p>
+
+          <p class="footer-links">
+          <a href="http://aacgriet.com" target="_blank">Home</a>
+          |
+          <a href="http://aacgriet.com/aac_about.html" target="_blank">About</a>
+          |
+          <a href="http://aacgriet.com/faq.html" target="_blank">FAQ</a>
+      </p>
+      <div class="footer-icons">
+          <a href="https://www.linkedin.com/company/aac-griet" target="_blank"><i class="fa fa-linkedin"></i></a>
+          
+          <a href="https://instagram.com/aac_grietofficial?igshid=ijzbi8c7jl27" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCqpWtDtDLxBLy8yJZO_-eBw" target="_blank"><i class="fa fa-youtube"></i></a>
+      </div>
+      <br>
+      
+  </div>
+</footer>
+    
+</body>
+</html>

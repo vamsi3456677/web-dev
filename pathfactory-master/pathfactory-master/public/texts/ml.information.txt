@@ -1,0 +1,19 @@
+books:
+ 1 . https://diveintopython3.net/table-of-contents.html
+by dive into net
+2. https://python.swaroopch.com/oop.html
+by swaroopch
+3 . 
+geeks for:
+https://www.geeksforgeeks.org/how-to-start-learning-machine-learning/
+ mit site:
+https://sgfin.github.io/learning-resources/
+tutorial point
+https://www.tutorialspoint.com/machine_learning_with_python/index.htm
+https://www.w3schools.com/python/python_ml_getting_started.asp
+
+{https://docs.microsoft.com/en-us/learn/}
+udemy course:
+https://www.udemy.com/course/machinelearning/
+udacity free course:
+https://www.udacity.com/course/intro-to-machine-learning--ud120
